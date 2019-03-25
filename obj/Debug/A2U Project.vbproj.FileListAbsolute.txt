@@ -7,4 +7,4 @@ C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U 
 C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.dll
 C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.xml
 C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.pdb
-C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.CopyComplete
+C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\bin\Debug\A2U Project.dll

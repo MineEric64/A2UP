@@ -2,11 +2,16 @@
     'Made By MineEric64 (최에릭)
     '[BETA] This is Open Project. So You Can Build this Project!
 
+    Public Sub New()
+
+    End Sub
+
     Public Enum keyLED_AC
         ''' <summary>
         ''' Changing Note Number (64 to x1 y1).
         ''' </summary>
-        NoteNumber1
+        C_NoteNumber1
+        T_NoteLength1
     End Enum
 
     ''' <summary>
@@ -17,7 +22,7 @@
     ''' <returns></returns>
     Public Function GX_keyLED(ByVal List As keyLED_AC, ByVal NoteNumber As Integer) As Integer
         Select Case List
-            Case keyLED_AC.NoteNumber1
+            Case keyLED_AC.C_NoteNumber1
                 '[Ableton LED To UniPack LED Convert CODE] [BETA!!]'
                 Select Case NoteNumber
                     'Postion X: 1
@@ -33,7 +38,7 @@
                         Return 3
 
                         'Position X: 4
-                    Case 52, 53, 54, 55, 85, 86, 87
+                    Case 52, 53, 54, 55, 84, 85, 86, 87
                         Return 4
 
                         'Position X: 5
@@ -50,6 +55,7 @@
 
                         'Position X: 8
                     Case 36, 37, 38, 39, 68, 69, 70, 71
+                        Return 8
 
                         'MC9 ~ MC16
                     Case 100
@@ -82,7 +88,7 @@
     ''' <returns></returns>
     Public Function GY_keyLED(ByVal List As keyLED_AC, ByVal NoteNumber As Integer) As Integer
         Select Case List
-            Case keyLED_AC.NoteNumber1
+            Case keyLED_AC.C_NoteNumber1
                 '[Ableton LED To UniPack LED Convert CODE] [BETA!!]'
                 Select Case NoteNumber
                     'Position Y: 1
@@ -123,5 +129,18 @@
                 End Select
         End Select
         Return 0 'Exception
+    End Function
+
+    Public Function GetNoteDelay(ByVal List As keyLED_AC, ByVal bpm As Integer, ByVal ppq As Integer, Delay As Integer) As Integer
+        Select Case List
+            Case keyLED_AC.T_NoteLength1
+                'NoteLength: NL4Ticks, N2MS
+                Dim a As Integer = ppq * bpm
+                Dim b As Integer = Math.Round(60000 / a)
+                Return b * Delay
+
+        End Select
+
+        Return 0
     End Function
 End Class
