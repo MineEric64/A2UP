@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' 어셈블리 특성 값을 검토합니다.
 
-<Assembly: AssemblyTitle("A2U Project")>
+<Assembly: AssemblyTitle("A2UP")>
 <Assembly: AssemblyDescription("Ableton 2 Unipack Project")>
 <Assembly: AssemblyCompany("MineEric64 (최에릭)")>
 <Assembly: AssemblyProduct("A2U Project")>

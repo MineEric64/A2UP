@@ -1,4 +1,4 @@
-﻿Public Class A2UP
+﻿Public Class A2U
     'Made By MineEric64 (최에릭)
     '[BETA] This is Open Project. So You Can Build this Project!
 
