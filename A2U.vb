@@ -58,22 +58,17 @@
                         Return 8
 
                         'MC9 ~ MC16
-                    Case 100
-                        Return 9
-                    Case 101
-                        Return 10
-                    Case 102
-                        Return 11
-                    Case 103
-                        Return 12
-                    Case 104
-                        Return 13
-                    Case 105
-                        Return 14
-                    Case 106
-                        Return 15
-                    Case 107
-                        Return 16
+                    Case 100 To 107
+                        Return -8192
+
+                        'MC17 ~ MC32 [BETA]
+                    Case 108 To 123
+                        Return -8192
+
+                        'MC1 ~ MC8 [BETA]
+                    Case 28 To 35
+                        Return -8192
+
                 End Select
         End Select
 
@@ -124,10 +119,78 @@
                         Return 8
 
                         'MC9 ~ MC16
-                    Case 100 To 107
-                        Return 8192
+                    Case 100
+                        Return 9
+                    Case 101
+                        Return 10
+                    Case 102
+                        Return 11
+                    Case 103
+                        Return 12
+                    Case 104
+                        Return 13
+                    Case 105
+                        Return 14
+                    Case 106
+                        Return 15
+                    Case 107
+                        Return 16
+
+                        'MC17 ~ MC32 [BETA]
+                    Case 108
+                        Return 17
+                    Case 109
+                        Return 18
+                    Case 110
+                        Return 19
+                    Case 111
+                        Return 20
+                    Case 112
+                        Return 21
+                    Case 113
+                        Return 22
+                    Case 114
+                        Return 23
+                    Case 115
+                        Return 24
+                    Case 116
+                        Return 25
+                    Case 117
+                        Return 26
+                    Case 118
+                        Return 27
+                    Case 119
+                        Return 28
+                    Case 120
+                        Return 29
+                    Case 121
+                        Return 30
+                    Case 122
+                        Return 31
+                    Case 123
+                        Return 32
+
+                        'MC1 ~ MC8 [BETA]
+                    Case 28
+                        Return 1
+                    Case 29
+                        Return 2
+                    Case 30
+                        Return 3
+                    Case 31
+                        Return 4
+                    Case 32
+                        Return 5
+                    Case 33
+                        Return 6
+                    Case 34
+                        Return 7
+                    Case 35
+                        Return 8
+
                 End Select
         End Select
+
         Return 0 'Exception
     End Function
 
