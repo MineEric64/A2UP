@@ -10,7 +10,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("A2UP")>
 <Assembly: AssemblyDescription("Ableton 2 Unipack Project")>
-<Assembly: AssemblyCompany("MineEric64 (최에릭)")>
+<Assembly: AssemblyCompany("MineEric64 (최에릭), Follow_JB")>
 <Assembly: AssemblyProduct("A2U Project")>
 <Assembly: AssemblyCopyright("Copyright © 2019 UniLab All Rights Reserved.")>
 <Assembly: AssemblyTrademark("")>
