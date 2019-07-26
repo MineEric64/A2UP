@@ -11,7 +11,7 @@ A2UP Homepage is Developing... Please wait a moment! :D
 
 ## About The 'A2UP'
 
-### A2UP is short for 'Ableton 2 UniPack'.
+### A2UP is short for 'Ableton 2 Unipack Project'.
 A2UP converts Ableton Project File to UniPack.
 
 ##### It likes UniConverter, but A2UP supports "Advanced Converting Algorithm".
