@@ -14,6 +14,10 @@
         T_NoteLength1
     End Enum
 
+    Public Shared Function GetVersion() As Version
+        Return New Version("1.0.0.0")
+    End Function
+
     ''' <summary>
     ''' Get keyLED Position X. (Supports Only MK2)
     ''' </summary>
