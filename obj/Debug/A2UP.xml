@@ -22,22 +22,32 @@ A2UP
   재정의합니다.
 </summary>
 </member>
-<member name="F:A2UP.A2U.keyLED_AC.C_NoteNumber1">
+<member name="F:A2UP.A2U.keyLED_MIDEX.NoteNumber_1">
  <summary>
- Changing Note Number (64 to x1 y1).
+ Launchpad LED's Note Number.
  </summary>
 </member>
-<member name="M:A2UP.A2U.GX_keyLED(A2UP.A2U.keyLED_AC,System.Int32)">
+<member name="F:A2UP.A2U.keyLED_MIDEX.NoteNumber_2">
  <summary>
- Get keyLED Position X. (Supports Only MK2)
+ Launchpad MIDI In's Note Number.
+ </summary>
+</member>
+<member name="F:A2UP.A2U.keyLED_MIDEX.NoteLength_1">
+ <summary>
+ Launchpad LED's Note Length.
+ </summary>
+</member>
+<member name="M:A2UP.A2U.GX_keyLED(A2UP.A2U.keyLED_MIDEX,System.Int32)">
+ <summary>
+ Get keyLED Position X from MIDI Event.
  </summary>
  <param name="List">keyLED Algorithm List.</param>
  <param name="NoteNumber">MIDI Note Number.</param>
  <returns></returns>
 </member>
-<member name="M:A2UP.A2U.GY_keyLED(A2UP.A2U.keyLED_AC,System.Int32)">
+<member name="M:A2UP.A2U.GY_keyLED(A2UP.A2U.keyLED_MIDEX,System.Int32)">
  <summary>
- Get keyLED Position Y. (Supports Only MK2)
+ Get keyLED Position Y from MIDI Event.
  </summary>
  <param name="List">keyLED Algorithm List.</param>
  <param name="NoteNumber">MIDI Note Number.</param>

@@ -6,12 +6,23 @@
 
     End Sub
 
-    Public Enum keyLED_AC
+    Public Enum keyLED_MIDEX
         ''' <summary>
-        ''' Changing Note Number (64 to x1 y1).
+        ''' Launchpad LED's Note Number.
         ''' </summary>
-        C_NoteNumber1
-        T_NoteLength1
+        NoteNumber_1
+
+        ''' <summary>
+        ''' Launchpad MIDI In's Note Number.
+        ''' </summary>
+        NoteNumber_2
+
+
+
+        ''' <summary>
+        ''' Launchpad LED's Note Length.
+        ''' </summary>
+        NoteLength_1
     End Enum
 
     Public Shared Function GetVersion() As Version
@@ -19,14 +30,17 @@
     End Function
 
     ''' <summary>
-    ''' Get keyLED Position X. (Supports Only MK2)
+    ''' Get keyLED Position X from MIDI Event.
     ''' </summary>
     ''' <param name="List">keyLED Algorithm List.</param>
     ''' <param name="NoteNumber">MIDI Note Number.</param>
     ''' <returns></returns>
-    Public Function GX_keyLED(ByVal List As keyLED_AC, ByVal NoteNumber As Integer) As Integer
+    Public Shared Function GX_keyLED(ByVal List As keyLED_MIDEX, ByVal NoteNumber As Integer) As Integer
         Select Case List
-            Case keyLED_AC.C_NoteNumber1
+
+            Case keyLED_MIDEX.NoteNumber_1
+
+
                 '[Ableton LED To UniPack LED Convert CODE] [BETA!!]'
                 Select Case NoteNumber
                     'Postion X: 1
@@ -74,20 +88,54 @@
                         Return -8192
 
                 End Select
+
+            Case keyLED_MIDEX.NoteNumber_2
+
+                Select Case NoteNumber
+                    Case 81 To 88
+                        Return 1
+
+                    Case 71 To 78
+                        Return 2
+
+                    Case 61 To 68
+                        Return 3
+
+                    Case 51 To 58
+                        Return 4
+
+                    Case 41 To 48
+                        Return 5
+
+                    Case 31 To 38
+                        Return 6
+
+                    Case 21 To 28
+                        Return 7
+
+                    Case 11 To 18
+                        Return 8
+
+                    Case 89, 79, 69, 59, 49, 39, 29, 19
+                        Return -8192
+
+                End Select
+
         End Select
 
-        Return 0 'Exception
+                Return 0 'Exception
     End Function
 
     ''' <summary>
-    ''' Get keyLED Position Y. (Supports Only MK2)
+    ''' Get keyLED Position Y from MIDI Event.
     ''' </summary>
     ''' <param name="List">keyLED Algorithm List.</param>
     ''' <param name="NoteNumber">MIDI Note Number.</param>
     ''' <returns></returns>
-    Public Function GY_keyLED(ByVal List As keyLED_AC, ByVal NoteNumber As Integer) As Integer
+    Public Shared Function GY_keyLED(ByVal List As keyLED_MIDEX, ByVal NoteNumber As Integer) As Integer
         Select Case List
-            Case keyLED_AC.C_NoteNumber1
+
+            Case keyLED_MIDEX.NoteNumber_1
                 '[Ableton LED To UniPack LED Convert CODE] [BETA!!]'
                 Select Case NoteNumber
                     'Position Y: 1
@@ -193,14 +241,69 @@
                         Return 8
 
                 End Select
+
+            Case keyLED_MIDEX.NoteNumber_2
+
+                Select Case NoteNumber
+
+                    Case 81, 71, 61, 51, 41, 31, 21, 11
+                        Return 1
+
+                    Case 82, 72, 62, 52, 42, 32, 22, 12
+                        Return 2
+
+                    Case 83, 73, 63, 53, 43, 33, 23, 13
+                        Return 3
+
+                    Case 84, 74, 64, 54, 44, 34, 24, 14
+                        Return 4
+
+                    Case 85, 75, 65, 55, 45, 35, 25, 15
+                        Return 5
+
+                    Case 86, 76, 66, 56, 46, 36, 26, 16
+                        Return 6
+
+                    Case 87, 77, 67, 57, 47, 37, 27, 17
+                        Return 7
+
+                    Case 88, 78, 68, 58, 48, 38, 28, 18
+                        Return 8
+
+                    Case 89
+                        Return 1
+
+                    Case 79
+                        Return 2
+
+                    Case 69
+                        Return 3
+
+                    Case 59
+                        Return 4
+
+                    Case 49
+                        Return 5
+
+                    Case 39
+                        Return 6
+
+                    Case 29
+                        Return 7
+
+                    Case 19
+                        Return 8
+
+                End Select
+
         End Select
 
         Return 0 'Exception
     End Function
 
-    Public Function GetNoteDelay(ByVal List As keyLED_AC, ByVal bpm As Integer, ByVal ppq As Integer, Delay As Integer) As Integer
+    Public Shared Function GetNoteDelay(ByVal List As keyLED_MIDEX, ByVal bpm As Integer, ByVal ppq As Integer, Delay As Integer) As Integer
         Select Case List
-            Case keyLED_AC.T_NoteLength1
+            Case keyLED_MIDEX.NoteLength_1
                 'NoteLength: NL4Ticks, N2MS
                 Dim a As Integer = ppq * bpm
                 Dim b As Integer = Math.Round(60000 / a)
