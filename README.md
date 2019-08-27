@@ -21,7 +21,7 @@ A2UP converts Ableton Project File to UniPack.
 Even, It solves The Spaghetti Codes of UniConverter.
 
 #### This Project is Open Project. So you can build it without my permission!
-#### [ Latest Version: 1.0.0.0 | Test Version: 1.0.0.0 ]
+#### [ Latest Version: 1.1.2.0 | Test Version: 1.1.2.1 ]
 
 #### DEVELOPING PROJECTS make someone convinent.
-### -By MineEric64 (최에릭) on 08/25/19
+### -By MineEric64 (최에릭) on 08/27/19
