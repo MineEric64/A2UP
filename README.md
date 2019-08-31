@@ -5,7 +5,7 @@
 ### Ableton Project to UniPack Project.
 
 ### Made By 'MineEric64'. (최에릭)
-#### Helped By 'Follow_JB'.
+#### Helped By 'Follow_JB'!
 
 ## Notice!!
 A2UP Homepage is Developing... Please wait a moment! :D
@@ -24,4 +24,4 @@ Even, It solves The Spaghetti Codes of UniConverter.
 #### [ Latest Version: 1.1.3.0 | Test Version: 1.1.3.1 ]
 
 #### DEVELOPING PROJECTS make someone convinent.
-### -By MineEric64 (최에릭) on 08/27/19
+### -By MineEric64 (최에릭) on 08/31/19
