@@ -2,7 +2,7 @@
 
 <!-- ![A2UP_Icon](https://github.com/MineEric64/A2UP/blob/master/Resources/a2up_icon.png) -->
 
-### Ableton Project To UniPack Project.
+### Ableton Project to UniPack Project.
 
 ### Made By 'MineEric64'. (최에릭)
 #### Helped By 'Follow_JB'.
@@ -21,7 +21,7 @@ A2UP converts Ableton Project File to UniPack.
 Even, It solves The Spaghetti Codes of UniConverter.
 
 #### This Project is Open Project. So you can build it without my permission!
-#### [ Latest Version: 1.1.2.0 | Test Version: 1.1.2.1 ]
+#### [ Latest Version: 1.1.3.0 | Test Version: 1.1.3.1 ]
 
 #### DEVELOPING PROJECTS make someone convinent.
 ### -By MineEric64 (최에릭) on 08/27/19
