@@ -37,6 +37,11 @@ A2UP
  Launchpad LED's Note Length.
  </summary>
 </member>
+<member name="F:A2UP.A2U.keyLED_MIDEX.NoteLength_2">
+ <summary>
+ Get Note Length using FL Studio. (BPM: 120, PPQ: 92 / 192)
+ </summary>
+</member>
 <member name="M:A2UP.A2U.GX_keyLED(A2UP.A2U.keyLED_MIDEX,System.Int32)">
  <summary>
  Get keyLED Position X from MIDI Event.

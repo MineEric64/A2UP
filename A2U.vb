@@ -23,6 +23,11 @@
         ''' Launchpad LED's Note Length.
         ''' </summary>
         NoteLength_1
+
+        ''' <summary>
+        ''' Get Note Length using FL Studio. (BPM: 120, PPQ: 92 / 192)
+        ''' </summary>
+        NoteLength_2
     End Enum
 
     Public Shared Function GetVersion() As Version
@@ -301,13 +306,44 @@
         Return 0 'Exception
     End Function
 
-    Public Shared Function GetNoteDelay(ByVal List As keyLED_MIDEX, ByVal bpm As Integer, ByVal ppq As Integer, Delay As Integer) As Integer
+    Public Shared Function GetNoteDelay(ByVal List As keyLED_MIDEX, ByVal bpm As Integer, ByVal ppq As Integer, delay As Integer) As Integer
         Select Case List
+
             Case keyLED_MIDEX.NoteLength_1
-                'NoteLength: NL4Ticks, N2MS
+                'Note Length: NL4Ticks, N2MS
                 Dim a As Integer = ppq * bpm
                 Dim b As Integer = Math.Round(60000 / a)
-                Return b * Delay
+                Return b * delay
+
+            Case keyLED_MIDEX.NoteLength_2
+                'Note Length to Milliseconds
+                '[24ticks] Members
+                '110BPM: 130ms
+                '120BPM: 120ms
+                '128BPM: 110ms
+                '130BPM: 110ms
+
+                Dim mills As Integer = 1000
+                Dim pqn As Integer = 1
+                Select Case bpm
+                    Case 110
+                        mills = 130
+                    Case 120
+                        mills = 120
+                    Case 128, 130
+                        mills = 110
+                End Select
+
+                Select Case ppq
+                    Case 96
+                        pqn = 1
+                    Case 192
+                        pqn = 2
+                    Case Else
+                        pqn = 1
+                End Select
+
+                Return Math.Round(mills * (delay / pqn / 24))
 
         End Select
 
