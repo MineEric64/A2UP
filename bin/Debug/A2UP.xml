@@ -22,27 +22,48 @@ A2UP
   재정의합니다.
 </summary>
 </member>
-<member name="F:A2UP.A2U.keyLED_MIDEX.NoteNumber_1">
+<member name="T:A2UP.A2U">
+ <summary>
+ Ableton to UniPack Project.
+ </summary>
+</member>
+<member name="T:A2UP.A2U.keyLED_MIDEX">
+ <summary>
+ The Functions about keyLED (MIDI Extension).
+ </summary>
+</member>
+<member name="T:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents">
+ <summary>
+ NEW UX2A of keyLED (MIDI Extension) Note Events.
+ </summary>
+</member>
+<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_1">
  <summary>
  Launchpad LED's Note Number.
  </summary>
 </member>
-<member name="F:A2UP.A2U.keyLED_MIDEX.NoteNumber_2">
+<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_2">
  <summary>
  Launchpad MIDI In's Note Number.
  </summary>
 </member>
-<member name="F:A2UP.A2U.keyLED_MIDEX.NoteLength_1">
+<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteLength_1">
  <summary>
  Launchpad LED's Note Length.
  </summary>
 </member>
-<member name="F:A2UP.A2U.keyLED_MIDEX.NoteLength_2">
+<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteLength_2">
  <summary>
- Get Note Length using FL Studio. (BPM: 120, PPQ: 92 / 192)
+ Get Note Length using FL Studio. (BPM: 120, PPQ: 96 / 192)
  </summary>
 </member>
-<member name="M:A2UP.A2U.GX_keyLED(A2UP.A2U.keyLED_MIDEX,System.Int32)">
+<member name="M:A2UP.A2U.keyLED_MIDEX.GetVersion">
+ <summary>
+ Get Version from A2UP.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:A2UP.A2U.keyLED_MIDEX.GX_keyLED(A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents,System.Int32)">
  <summary>
  Get keyLED Position X from MIDI Event.
  </summary>
@@ -50,12 +71,22 @@ A2UP
  <param name="NoteNumber">MIDI Note Number.</param>
  <returns></returns>
 </member>
-<member name="M:A2UP.A2U.GY_keyLED(A2UP.A2U.keyLED_MIDEX,System.Int32)">
+<member name="M:A2UP.A2U.keyLED_MIDEX.GY_keyLED(A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents,System.Int32)">
  <summary>
  Get keyLED Position Y from MIDI Event.
  </summary>
  <param name="List">keyLED Algorithm List.</param>
  <param name="NoteNumber">MIDI Note Number.</param>
+ <returns></returns>
+</member>
+<member name="M:A2UP.A2U.keyLED_MIDEX.GetNoteDelay(A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Get Note Delay from NoteOnEvent's Note Length. (NAudio) [Ticks to Milliseconds]
+ </summary>
+ <param name="List">Note Events.</param>
+ <param name="bpm">Beats Per Minute.</param>
+ <param name="ppq">Pulses Per Quarter note.</param>
+ <param name="delay">Note Length from NoteOnEvent.</param>
  <returns></returns>
 </member>
 </members>
