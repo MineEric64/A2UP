@@ -22,20 +22,11 @@ A2UP
   재정의합니다.
 </summary>
 </member>
-<member name="T:A2UP.A2U">
+<member name="M:A2UP.A2U.GetVersion">
  <summary>
- Ableton to UniPack Project.
+ Get Version from A2UP.
  </summary>
-</member>
-<member name="T:A2UP.A2U.keyLED_MIDEX">
- <summary>
- The Functions about keyLED (MIDI Extension).
- </summary>
-</member>
-<member name="T:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents">
- <summary>
- NEW UX2A of keyLED (MIDI Extension) Note Events.
- </summary>
+ <returns></returns>
 </member>
 <member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_1">
  <summary>
@@ -56,12 +47,6 @@ A2UP
  <summary>
  Get Note Length using FL Studio. (BPM: 120, PPQ: 96 / 192)
  </summary>
-</member>
-<member name="M:A2UP.A2U.keyLED_MIDEX.GetVersion">
- <summary>
- Get Version from A2UP.
- </summary>
- <returns></returns>
 </member>
 <member name="M:A2UP.A2U.keyLED_MIDEX.GX_keyLED(A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents,System.Int32)">
  <summary>
@@ -87,6 +72,40 @@ A2UP
  <param name="bpm">Beats Per Minute.</param>
  <param name="ppq">Pulses Per Quarter note.</param>
  <param name="delay">Note Length from NoteOnEvent.</param>
+ <returns></returns>
+</member>
+<member name="M:A2UP.A2U.keyLED_MIDEX.GetNoteNumber(A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents,System.Int32,System.Int32)">
+ <summary>
+ Get Note Number from UniPack keyLED.
+ </summary>
+ <param name="List">Note Events.</param>
+ <param name="x">UniPack X</param>
+ <param name="y">UniPack Y</param>
+ <returns></returns>
+</member>
+<member name="F:A2UP.A2U.keySound.ks_NoteEvents.NoteNumber_1">
+ <summary>
+ Recieving Note Number. [ Drum Rack ]
+ </summary>
+</member>
+<member name="M:A2UP.A2U.keySound.GetkeySound(A2UP.A2U.keySound.ks_NoteEvents,System.Int32)">
+ <summary>
+ Get keySound from keySound_X.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:A2UP.A2U.keySound.Create_ksX(System.Int32,System.Int32)">
+ <summary>
+ Create the ksX with x and y.
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <returns></returns>
+</member>
+<member name="M:A2UP.A2U.keySound.CreateNullksX">
+ <summary>
+ Create the ksX with null. (x: 0, y: 0)
+ </summary>
  <returns></returns>
 </member>
 </members>

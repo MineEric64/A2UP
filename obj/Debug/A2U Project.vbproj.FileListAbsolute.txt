@@ -7,13 +7,13 @@ C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U 
 C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.dll
 C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.xml
 C:\Users\SAMSUNG\documents\visual studio 2017\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.pdb
-C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.Resources.resources
-C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.GenerateResource.cache
-C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.CoreCompileInputs.cache
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\bin\Debug\A2UP.dll
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\bin\Debug\A2UP.pdb
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\bin\Debug\A2UP.xml
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbprojAssemblyReference.cache
+C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.Resources.resources
+C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.GenerateResource.cache
+C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.CoreCompileInputs.cache
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.CopyComplete
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.dll
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.xml
