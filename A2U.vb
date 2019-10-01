@@ -327,32 +327,12 @@
 
                 Case keyLED_NoteEvents.NoteLength_2
                     'Note Length to Milliseconds
-                    '[24ticks] Members
-                    '110BPM: 130ms
-                    '120BPM: 120ms
-                    '128BPM: 110ms
-                    '130BPM: 110ms
 
-                    Dim mills As Integer = 1000
+                    Dim mills As Integer
                     Dim pqn As Integer
-                    Select Case bpm
-                        Case 110
-                            mills = 130
-                        Case 120
-                            mills = 120
-                        Case 128, 130
-                            mills = 110
-                    End Select
 
-                    Select Case ppq
-                        Case 96
-                            pqn = 1
-                        Case 192
-                            pqn = 2
-                        Case Else
-                            pqn = ppq / 96
-                    End Select
-
+                    mills = 120 + (120 - bpm)
+                    pqn = ppq / 96
                     Return Math.Round(mills * (delay / pqn / 24))
 
             End Select
