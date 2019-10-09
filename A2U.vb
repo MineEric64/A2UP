@@ -7,7 +7,7 @@
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function GetVersion() As Version
-        Return New Version("1.3.5.0")
+        Return New Version("1.3.7.0")
     End Function
 
     Public Class keyLED_MIDEX
@@ -612,6 +612,17 @@
             ks.x = 0
             ks.y = 0
             Return ks
+        End Function
+
+        Public Shared Function sLToTime(ByVal sL As Long) As TimeSpan
+            '10000ms = 443366
+            '1ms = 44
+            Const l As Integer = 44
+            Dim rT As Integer = Convert.ToInt32(sL / Convert.ToInt64(l))
+            Debug.WriteLine(rT)
+
+            Dim rTime As TimeSpan = TimeSpan.FromMilliseconds(rT)
+            Return rTime
         End Function
     End Class
 End Class
