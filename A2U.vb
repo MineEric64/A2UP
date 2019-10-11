@@ -619,7 +619,6 @@
             '1ms = 44
             Const l As Integer = 44
             Dim rT As Integer = Convert.ToInt32(sL / Convert.ToInt64(l))
-            Debug.WriteLine(rT)
 
             Dim rTime As TimeSpan = TimeSpan.FromMilliseconds(rT)
             Return rTime
