@@ -7,7 +7,7 @@
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function GetVersion() As Version
-        Return New Version("1.3.7.0")
+        Return New Version("1.3.8.0")
     End Function
 
     Public Class keyLED_MIDEX
@@ -196,38 +196,39 @@
                             Return 16
 
                         'MC17 ~ MC32 [BETA]
-                        Case 108
-                            Return 17
-                        Case 109
-                            Return 18
-                        Case 110
-                            Return 19
-                        Case 111
-                            Return 20
-                        Case 112
-                            Return 21
-                        Case 113
-                            Return 22
-                        Case 114
-                            Return 23
-                        Case 115
-                            Return 24
                         Case 116
-                            Return 25
+                            Return 24
                         Case 117
-                            Return 26
+                            Return 23
                         Case 118
-                            Return 27
+                            Return 22
                         Case 119
-                            Return 28
+                            Return 21
                         Case 120
-                            Return 29
+                            Return 20
                         Case 121
-                            Return 30
+                            Return 19
                         Case 122
-                            Return 31
+                            Return 18
                         Case 123
+                            Return 17
+
+                        Case 108
                             Return 32
+                        Case 109
+                            Return 31
+                        Case 110
+                            Return 30
+                        Case 111
+                            Return 29
+                        Case 112
+                            Return 28
+                        Case 113
+                            Return 27
+                        Case 114
+                            Return 26
+                        Case 115
+                            Return 25
 
                         'MC1 ~ MC8 [BETA]
                         Case 28
