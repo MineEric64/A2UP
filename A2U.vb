@@ -7,7 +7,7 @@
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function GetVersion() As Version
-        Return New Version("1.3.8.0")
+        Return New Version("1.3.9.0")
     End Function
 
     Public Class keyLED_MIDEX
@@ -82,17 +82,17 @@
                         Case 36, 37, 38, 39, 68, 69, 70, 71
                             Return 8
 
-                        'MC9 ~ MC16
-                        Case 100 To 107
+                        'MC9 ~ MC32
+                        Case 100 To 123
                             Return -8192
 
-                        'MC17 ~ MC32 [BETA]
-                        Case 108 To 123
-                            Return -8192
-
-                        'MC1 ~ MC8 [BETA]
+                        'MC1 ~ MC8
                         Case 28 To 35
                             Return -8192
+
+                        'Logo Light / Mod Light
+                        Case 27
+                            Return -8193
 
                     End Select
 
@@ -248,6 +248,9 @@
                         Case 35
                             Return 8
 
+                        'Logo Light / Mod Light
+                        Case 27
+                            Return 33
                     End Select
 
                 Case keyLED_NoteEvents.NoteNumber_2
@@ -598,7 +601,7 @@
                     Throw New ArgumentException("y는 값이 항상 1~8 이여야 합니다.")
                 End If
 
-                Dim ks As New ksX
+            Dim ks As New ksX
             ks.x = x
             ks.y = y
             Return ks

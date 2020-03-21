@@ -13,7 +13,6 @@ C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Pr
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbprojAssemblyReference.cache
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.Resources.resources
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.GenerateResource.cache
-C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.CoreCompileInputs.cache
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2U Project.vbproj.CopyComplete
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.dll
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Debug\A2UP.xml

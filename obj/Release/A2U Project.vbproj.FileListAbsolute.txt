@@ -4,7 +4,6 @@ C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Pr
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2U Project.vbprojAssemblyReference.cache
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2UP.Resources.resources
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2U Project.vbproj.GenerateResource.cache
-C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2U Project.vbproj.CoreCompileInputs.cache
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2UP.dll
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2UP.xml
 C:\Users\gobac\Documents\Visual Studio 2019\Projects\UniConverter Project\A2U Project\obj\Release\A2UP.pdb
