@@ -7,7 +7,7 @@
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function GetVersion() As Version
-        Return New Version("1.3.9.0")
+        Return New Version("1.4.0.0")
     End Function
 
     Public Class keyLED_MIDEX

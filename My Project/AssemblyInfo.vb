@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Ableton Project File to UniPack Project")>
 <Assembly: AssemblyCompany("MineEric64 (최에릭), Follow JB")>
 <Assembly: AssemblyProduct("A2U Project")>
-<Assembly: AssemblyCopyright("Copyright © 2019 UniLab All Rights Reserved.")>
+<Assembly: AssemblyCopyright("Copyright 2019. Team Unitor All Rights Reserved.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 지정되도록 할 수 있습니다.
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.3.8.0")>
-<Assembly: AssemblyFileVersion("1.3.8.0")>
+<Assembly: AssemblyVersion("1.4.0.0")>
+<Assembly: AssemblyFileVersion("1.4.0.0")>
