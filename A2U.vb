@@ -7,7 +7,7 @@
     ''' </summary>
     ''' <returns></returns>
     Public Shared Function GetVersion() As Version
-        Return New Version("1.4.0.0")
+        Return New Version("2.7.0.0")
     End Function
 
     Public Class keyLED_MIDEX
@@ -16,12 +16,12 @@
             ''' <summary>
             ''' Launchpad LED's Note Number.
             ''' </summary>
-            NoteNumber_1
+            NoteNumber_DrumRackLayout
 
             ''' <summary>
             ''' Launchpad MIDI In's Note Number.
             ''' </summary>
-            NoteNumber_2
+            NoteNumber_XYLayout
 
 
 
@@ -45,42 +45,18 @@
         Public Shared Function GX_keyLED(ByVal List As keyLED_NoteEvents, ByVal NoteNumber As Integer) As Integer
             Select Case List
 
-                Case keyLED_NoteEvents.NoteNumber_1
+                Case keyLED_NoteEvents.NoteNumber_DrumRackLayout
 
 
                     '[Ableton LED To UniPack LED Convert CODE] [BETA!!]'
                     Select Case NoteNumber
-                    'Postion X: 1
-                        Case 64, 65, 66, 67, 96, 97, 98, 99
-                            Return 1
-
-                        'Position X: 2
-                        Case 60, 61, 62, 63, 92, 93, 94, 95
-                            Return 2
-
-                        'Position X: 3
-                        Case 56, 57, 58, 59, 88, 89, 90, 91
-                            Return 3
-
-                        'Position X: 4
-                        Case 52, 53, 54, 55, 84, 85, 86, 87
-                            Return 4
-
-                        'Position X: 5
-                        Case 48, 49, 50, 51, 80, 81, 82, 83
-                            Return 5
-
-                        'Position X: 6
-                        Case 44, 45, 46, 47, 76, 77, 78, 79
-                            Return 6
-
-                        'Position X: 7
-                        Case 40, 41, 42, 43, 72, 73, 74, 75
-                            Return 7
-
-                        'Position X: 8
-                        Case 36, 37, 38, 39, 68, 69, 70, 71
-                            Return 8
+                        'Position - Code Cleanup (v2.0)
+                        Case 36 To 99
+                            If NoteNumber >= 36 AndAlso NoteNumber <= 67 Then
+                                Return Math.Ceiling((68 - NoteNumber) / 4)
+                            ElseIf NoteNumber >= 68 AndAlso NoteNumber <= 99 Then
+                                Return Math.Ceiling((100 - NoteNumber) / 4)
+                            End If
 
                         'MC9 ~ MC32
                         Case 100 To 123
@@ -96,7 +72,7 @@
 
                     End Select
 
-                Case keyLED_NoteEvents.NoteNumber_2
+                Case keyLED_NoteEvents.NoteNumber_XYLayout
 
                     Select Case NoteNumber
                         Case 81 To 88
@@ -142,118 +118,37 @@
         Public Shared Function GY_keyLED(ByVal List As keyLED_NoteEvents, ByVal NoteNumber As Integer) As Integer
             Select Case List
 
-                Case keyLED_NoteEvents.NoteNumber_1
+                Case keyLED_NoteEvents.NoteNumber_DrumRackLayout
                     '[Ableton LED To UniPack LED Convert CODE] [BETA!!]'
                     Select Case NoteNumber
-                    'Position Y: 1
-                        Case 64, 60, 56, 52, 48, 44, 40, 36
-                            Return 1
+                        'Position - Code Cleanup (v2.0)
+                        Case 36 To 99
+                            Dim addx As Integer = 0
 
-                        'Position Y: 2
-                        Case 65, 61, 57, 53, 49, 45, 41, 37
-                            Return 2
+                            If NoteNumber >= 68 AndAlso NoteNumber <= 99 Then
+                                addx = 4
+                            End If
 
-                        'Position Y: 3
-                        Case 66, 62, 58, 54, 50, 46, 42, 38
-                            Return 3
-
-                        'Position Y: 4
-                        Case 67, 63, 59, 55, 51, 47, 43, 39
-                            Return 4
-
-                        'Position Y: 5
-                        Case 96, 92, 88, 84, 80, 76, 72, 68
-                            Return 5
-
-                        'Position Y: 6
-                        Case 97, 93, 89, 85, 81, 77, 73, 69
-                            Return 6
-
-                        'Position Y: 7
-                        Case 98, 94, 90, 86, 82, 78, 74, 70
-                            Return 7
-
-                        'Position Y: 8
-                        Case 99, 95, 91, 87, 83, 79, 75, 71
-                            Return 8
-
-                        'MC9 ~ MC16
-                        Case 100
-                            Return 9
-                        Case 101
-                            Return 10
-                        Case 102
-                            Return 11
-                        Case 103
-                            Return 12
-                        Case 104
-                            Return 13
-                        Case 105
-                            Return 14
-                        Case 106
-                            Return 15
-                        Case 107
-                            Return 16
-
-                        'MC17 ~ MC32 [BETA]
-                        Case 116
-                            Return 24
-                        Case 117
-                            Return 23
-                        Case 118
-                            Return 22
-                        Case 119
-                            Return 21
-                        Case 120
-                            Return 20
-                        Case 121
-                            Return 19
-                        Case 122
-                            Return 18
-                        Case 123
-                            Return 17
-
-                        Case 108
-                            Return 32
-                        Case 109
-                            Return 31
-                        Case 110
-                            Return 30
-                        Case 111
-                            Return 29
-                        Case 112
-                            Return 28
-                        Case 113
-                            Return 27
-                        Case 114
-                            Return 26
-                        Case 115
-                            Return 25
+                            Return (NoteNumber Mod 4) + addx + 1
 
                         'MC1 ~ MC8 [BETA]
-                        Case 28
-                            Return 1
-                        Case 29
-                            Return 2
-                        Case 30
-                            Return 3
-                        Case 31
-                            Return 4
-                        Case 32
-                            Return 5
-                        Case 33
-                            Return 6
-                        Case 34
-                            Return 7
-                        Case 35
-                            Return 8
+                        Case 28 To 35
+                            Return NoteNumber - 27
+
+                        'MC9 ~ MC16
+                        Case 100 To 107
+                            Return NoteNumber - 91
+
+                        'MC17 ~ MC32 [BETA]
+                        Case 108 To 123
+                            Return 140 - NoteNumber
 
                         'Logo Light / Mod Light
                         Case 27
                             Return 33
                     End Select
 
-                Case keyLED_NoteEvents.NoteNumber_2
+                Case keyLED_NoteEvents.NoteNumber_XYLayout
 
                     Select Case NoteNumber
 

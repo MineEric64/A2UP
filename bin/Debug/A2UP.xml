@@ -28,12 +28,12 @@ A2UP
  </summary>
  <returns></returns>
 </member>
-<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_1">
+<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_DrumRackLayout">
  <summary>
  Launchpad LED's Note Number.
  </summary>
 </member>
-<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_2">
+<member name="F:A2UP.A2U.keyLED_MIDEX.keyLED_NoteEvents.NoteNumber_XYLayout">
  <summary>
  Launchpad MIDI In's Note Number.
  </summary>
